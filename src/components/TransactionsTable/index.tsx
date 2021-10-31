@@ -3,15 +3,6 @@ import { useTransactions } from '../../hooks/useTransactions';
 import { EmptyTransactions } from '../EmptyTransactions';
 import { Container } from './styles';
 
-interface Transaction {
-  id: number;
-  title: string;
-  ammount: number;
-  category: string;
-  createdAt: string;
-  type: string;
-}
-
 export function TransactionTable() {
   const { transactions, removeTransaction } = useTransactions();
 
